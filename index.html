@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ponkila - a software company</title>
+    <meta name="description" content="Ponkila conducts activities related to computer programming. Its origins are in Muhos, backwoods of Finland.">
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    <style>
+        body {
+            font-family: "fira-mono", monospace;
+            display: flex;
+            justify-content: center;
+            margin-top: 10em;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .bounding-box {
+            width: 100px;
+            height: 100px;
+        }
+
+        #postal-code {
+            color: blue;
+            position: absolute;
+        }
+
+        #initial-letter {
+            border: 1px dotted black;
+            margin-top: 10px;
+            margin-right: 25px;
+            font-size: 90pt;
+            font-style: italic;
+        }
+
+        #info-box {
+            font-size: 75%;
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bounding-box" id="postal-code">
+        <p>10110 010 101 101 10 0</p>
+    </div>
+    <div class="bounding-box" id="initial-letter">
+        <p>P</p>
+    </div>
+    <div id="info-box">
+        <i>Ponkila Oy</i>
+        <p>Mailboxde.com GmbH</p>
+        <p>Ponkila GmbH, ID 61479</p>
+        <p>Äussere Weberstr. 57</p>
+        <p>02763 Zittau</p>
+        <p>GERMANY</p>
+        <a href="mailto:business@ponkila.com">business@ponkila.com</a>
+    </div>
+    <script src="https://use.typekit.net/giv2ipk.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+</body>
+
+</html>
